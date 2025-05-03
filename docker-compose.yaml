@@ -2,5 +2,6 @@ services:
   app:
     build: .
     container_name: prediction-application
+    image: prediction-application:latest
     ports:
       - "8502:8502"
