@@ -1,7 +1,7 @@
 import pytest
 import pickle
 import numpy as np
-from mlops01 import app  # Import your Flask app
+from .. import app  # Import your Flask app
 
 # Load your model
 with open("model/iris_model.pkl", "rb") as f:
