@@ -4,5 +4,3 @@ services:
     container_name: prediction-application
     ports:
       - "8502:8502"
-    networks:
-      - app-net
