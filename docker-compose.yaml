@@ -6,6 +6,6 @@ services:
     container_name: prediction-application
     image: prediction-application:latest 
     ports:
-      - "8502:8502"  # Expose FastAPI app on port 8501
+      - "8502:8502"  
     networks:
       - app-network
