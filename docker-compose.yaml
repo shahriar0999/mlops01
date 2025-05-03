@@ -1,0 +1,11 @@
+services:
+  flaskapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: prediction-application
+    image: prediction-application:latest 
+    ports:
+      - "8502:8502"  # Expose FastAPI app on port 8501
+    networks:
+      - app-network
