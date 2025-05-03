@@ -1,7 +1,7 @@
 import pytest
 import pickle
 import numpy as np
-from app import app 
+from mlops01 import app  # Import your Flask app
 
 # Load your model
 with open("model/iris_model.pkl", "rb") as f:
@@ -16,7 +16,7 @@ def test_model_prediction():
 
 def test_flask_predict():
     # Create a test client for the Flask app
-    with app.test_client() as client:
+    with app.app.test_client() as client:
         # Define form data as a dictionary matching expected form field names
         form_data = {
             'sepal_length': 5.1,
