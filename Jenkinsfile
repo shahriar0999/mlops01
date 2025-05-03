@@ -9,7 +9,6 @@ pipeline {
         stage('Checkut Code') {
             steps {
                 git url: "https://github.com/shahriar0999/mlops01.git", branch: "main"
-                sh "ls-ltr"
                 echo "Successfully cloning the project repo"
             }
 
